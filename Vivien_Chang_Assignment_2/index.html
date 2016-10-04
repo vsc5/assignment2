@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./CSS/main.css">
+  <title>Assignment 2</title>
+</head>
+
+<body>
+<div id="container">
+  <h1>
+    Welcome! Using this form, we are going to decide whether or not we can be friends. Good luck!</h1>
+  <form action="#" method="post" name="formtastic" onsubmit="return false">
+    <fieldset>
+      <label for="name">Name:</label>
+      <br>
+      <input type="text" name="name" id="name">
+      <br>
+      <p id="nameerror">Please enter your name!</p>
+    </fieldset>
+    <fieldset>
+      <label for="age">Age:</label>
+      <br>
+      <input type="text" name="age" id="age">
+      <br>
+      <p id="ageerror">Please enter your age using numbers!</p>
+    </fieldset>
+    <fieldset>
+      <legend>Are you a dog or cat person? You have to choose one.</legend>
+      <input type="radio" value="dog" name="animal" id="dog" checked>
+      <label for="dog">Dog person</label>
+      <br>
+      <input type="radio" value="cat" name="animal" id="cat">
+      <label for="cat">Cat person</label>
+    </fieldset>
+    <fieldset>
+      <legend>Do you like pineapple pizza?</legend>
+      <select name="pizza">
+        <option value="yes">Yes, I do! (The right answer!)</option>
+        <option value="no">No! I hate it! (The wrong answer!)</option>
+        <option value="other">Other</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <label for="pother">Please elaborate if you'd like!</label>
+      <input type="text" name="pother" id="pother">
+    </fieldset>
+    <input type="submit" value="Submit!" name="submit">
+  </form>
+  <p id="success">
+    The form has been submitted.
+    <br> I'll let you know whether or not we can be friends ASAP!
+  </p>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="./JS/formtastic.js"></script>
+</body>
+
+</html>

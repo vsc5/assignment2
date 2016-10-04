@@ -1,0 +1,96 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-size: 70%;
+  height: 100%;
+  margin: 0;
+}
+
+#container {
+  background: lightgrey;
+  background: -webkit-linear-gradient(lightgrey, #f2f2f2, lightgrey);
+  background: -o-linear-gradient(lightgrey, #f2f2f2, lightgrey);
+  background: -moz-linear-gradient(lightgrey, #f2f2f2, lightgrey);
+  background: linear-gradient(lightgrey, #f2f2f2, lightgrey);
+  height: 100%;
+  margin: 0 8rem 0 8rem;
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+  font: 1.5rem arial, helvetica, sans-serif;
+  margin: 0;
+  padding-top: 1.5rem;
+}
+
+form[name=formtastic] {
+  border-style: solid;
+  border-radius: .5rem;
+  margin: 5rem 4rem 0 4rem;
+  padding: 3rem;
+  font: 1rem arial, helvetica, sans-serif;
+}
+
+input[type=text] {
+  background-color: transparent;
+  border-bottom: .1rem solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: #000;
+  width: 100%;
+  font: 1rem arial, helvetica, sans-serif;
+}
+
+input[type=text]:focus {
+  outline: none;
+}
+
+input[type=submit] {
+  background-color: #fff;
+  border: none;
+  padding: 1rem 0 1rem 0;
+  text-align: center;
+  display: inline-block;
+  font: 1rem arial, helvetica, sans-serif;
+  width: 100%;
+  border-radius: .5rem;
+}
+
+select {
+  width: 100%;
+  border: .1rem solid;
+  font: .8rem arial, helvetica, sans-serif;
+  color: #000;
+  background-color: #fff;
+}
+
+label[for=pother],
+#pother {
+  display: none;
+}
+
+#success {
+  text-align: center;
+  font: 2rem arial, helvetica, sans-serif;
+  display: none;
+}
+
+#nameerror,
+#ageerror {
+  display: none;
+  margin-bottom: -3rem;
+  color: red;
+}
+
+fieldset {
+  border-style: none;
+  margin-bottom: 1rem;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-before: 0;
+  -webkit-padding-after: 0;
+}
